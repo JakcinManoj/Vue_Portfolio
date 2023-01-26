@@ -1,0 +1,20 @@
+{
+  "ProjectsArray": [
+    {
+      "id": 1,
+      "Title": "Finance Logger",
+      "About": "It is a typesceipt project about taking logs of payments and invoices.",
+      "Image": "project1.gif",
+      "Link1": "https://github.com/JakcinManoj/Finance-Logger",
+      "Link2": "https://finance-logger-pi.vercel.app/"
+        },
+    {
+      "id": 2,
+      "Title": "Demon Slayer Game",
+      "About": "A Vue project of 2D game about a monster and player which is based on maintaining health.",
+      "Image": "project2.gif",
+      "Link1": "https://github.com/JakcinManoj/Demon_Slayer_Game",
+      "Link2": "https://demon-slayer-game.vercel.app/"
+    }
+  ]
+}
