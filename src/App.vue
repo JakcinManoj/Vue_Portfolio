@@ -8,7 +8,7 @@
   <div class="container">
     <nav>
       <ul>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:manojjakcin@gmail.com?subject=description">Contact</a></li>
       </ul>
     </nav>
     

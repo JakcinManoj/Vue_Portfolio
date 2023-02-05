@@ -33,6 +33,15 @@
               <h2>CodeChef</h2>
             </a>
           </div>
+          <label class="label">
+          <div class="toggle">
+            <input @click="emitToggleValue" class="toggle-state" type="checkbox" name="check" value="check">
+            <div class="indicator"></div>
+          </div>
+          </label>
+          <p></p>
+          <span style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Projects</span>
+          <p></p>
         </div>
       </div>
       <div class="container-two">
@@ -56,15 +65,10 @@
             <img src="../assets/logo.png" alt="" />
             <img src="../assets/python.png" alt="" />
             <img src="../assets/aws.png" alt="" />
-            <img src="../assets/graphql.png" alt="">
+            <img src="../assets/graphql.png" alt="" />
           </div>
         </div>
-        <div class="button-container">
-          <button @click="emitToggleValue">
-            <span v-if="isTrue">Hide Projects</span>
-            <span v-else>Show Projects</span>
-          </button>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -89,9 +93,55 @@ export default defineComponent({
 });
 </script>
 
-<script></script>
 
 <style scoped>
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #394a56;
+}
+
+.label-text {
+  margin-left: 16px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #ecf0f3;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+.technology-section {
+  text-align: center;
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -102,11 +152,14 @@ img {
 
 .main-container {
   display: flex;
-  flex-direction: row;
-  background-color: grey;
+  flex-direction: both;
   border-radius: 25px;
-  width: 80%;
-  background-color: lavenderblush;
+  background-color: rgba(241, 237, 237, 0.194);
+  margin: 1%;
+  text-align: center;
+  overflow: auto;
+  box-shadow: -20px -20px 60px #5b5252,
+             20px 20px 60px #7b7070;
 }
 .profile img {
   height: 10rem;
@@ -123,14 +176,18 @@ img {
 }
 
 .container-one {
-  background-color: peachpuff;
-  padding: 2.5%;
+  background-color: whitesmoke;
   width: flexbox;
   border-radius: 25px;
+  margin-right: 2.5%;
 }
 .container-two {
-  margin: 2.5%;
+  padding: 2.5%;
+  background-color: lavenderblush;
   width: flexbox;
+  
+  overflow: auto;
+  border-radius: 25px;
 }
 .about-me {
   text-align: left;
@@ -142,35 +199,21 @@ img {
 }
 
 
-button {
-  transition:  background-color 0.3s ease;
-  background-color: white;
-  padding: 6px 12px;
-  border-radius: 25px;
-  
-}
 
 
-@media screen and (max-width: 600px) {
-  .wrapper {
-    width: 95%;
-  }
-}
+
 @media screen and (max-width: 516px) {
   .wrapper {
-    width: 95%;
     font-size: smaller;
   }
 }
 @media screen and (max-width: 466px) {
   .wrapper {
-    width: 95%;
     font-size: x-small;
   }
 }
 @media screen and (max-width: 407px) {
   .wrapper {
-    width: 99%;
     font-size: xx-small;
   }
 }
