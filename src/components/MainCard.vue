@@ -40,7 +40,7 @@
           </div>
           </label>
           <p></p>
-          <span style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Projects</span>
+          <span style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Show Projects</span>
           <p></p>
         </div>
       </div>
@@ -57,7 +57,7 @@
           </p>
         </div>
         <div class="technology-section">
-          <h1>Technologies Studied</h1>
+          <h1>Technical Skills</h1>
           <div class="logos">
             <img src="../assets/typescript.png" alt="" />
             <img src="../assets/html&css.png" alt="" />
@@ -67,6 +67,10 @@
             <img src="../assets/aws.png" alt="" />
             <img src="../assets/graphql.png" alt="" />
           </div>
+          <div class="resume">
+            <h3>CV</h3>
+          <a href="https://drive.google.com/file/d/1Z2lp2fKdglJnR_bFVVKVMApah3L86RoH/view?usp=share_link" ><img src="../assets/cv.png" alt=""  /></a>
+        </div>
         </div>
         
       </div>
@@ -96,6 +100,19 @@ export default defineComponent({
 
 <style scoped>
 
+.resume {
+  display: grid;
+  
+  margin-top: 1rem;
+  height: 2rem;
+  padding: 1rem;
+}
+
+.resume img {
+  height: 2rem;
+}
+
+
 .label {
   display: inline-flex;
   align-items: center;
@@ -103,15 +120,12 @@ export default defineComponent({
   color: #394a56;
 }
 
-.label-text {
-  margin-left: 16px;
-}
 
 .toggle {
   isolation: isolate;
   position: relative;
-  height: 30px;
-  width: 60px;
+  height: 25px;
+  width: 50px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: -8px -4px 8px 0px #ffffff,
