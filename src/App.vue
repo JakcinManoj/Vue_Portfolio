@@ -87,6 +87,7 @@ footer a, footer p {
 @media screen and (max-width: 1245px) {
   footer {
     position: relative;
+    bottom: 0;
   }
 }
 
