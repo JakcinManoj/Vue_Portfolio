@@ -34,10 +34,10 @@
             </a>
           </div>
           <label class="label">
-          <div class="toggle">
-            <input @click="emitToggleValue" class="toggle-state" type="checkbox" name="check" value="check">
-            <div class="indicator"></div>
-          </div>
+            <div class="toggle" :class="{ 'blue': isTrue }">
+    <input @click="emitToggleValue" class="toggle-state" type="checkbox" name="check" value="check">
+    <div class="indicator"></div>
+  </div>
           </label>
           <p></p>
           <span style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Show Projects</span>
@@ -100,6 +100,10 @@ export default defineComponent({
 
 
 <style scoped>
+
+.toggle.blue .indicator {
+    background-color: #1E90FF;
+  }
 
 .resume {
   display: grid;
