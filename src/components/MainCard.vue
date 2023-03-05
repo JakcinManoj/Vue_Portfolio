@@ -102,7 +102,7 @@ export default defineComponent({
 <style scoped>
 
 .toggle.blue .indicator {
-    background-color: #1E90FF;
+    background-color: orange;
   }
 
 .resume {
