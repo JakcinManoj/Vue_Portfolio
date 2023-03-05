@@ -10,13 +10,13 @@
         </div>
         <div class="social-links">
           <div class="link">
-            <a href="https://github.com/JakcinManoj">
+            <a href="https://github.com/JakcinManoj" target="_blank">
               <img src="../assets/github.png" alt="" />
               <h2>Github</h2>
             </a>
           </div>
           <div class="link">
-            <a href="https://www.linkedin.com/in/jakcinmanoj">
+            <a href="https://www.linkedin.com/in/jakcinmanoj" target="_blank">
               <img src="../assets/linkedin.png" alt="" />
               <h2>Linkedin</h2>
             </a>
@@ -28,7 +28,7 @@
             </a>
           </div>
           <div class="link">
-            <a href="https://discuss.codechef.com/u/jake_jake_23">
+            <a href="https://discuss.codechef.com/u/jake_jake_23" target="_blank">
               <img src="../assets/codechef.png" alt="" />
               <h2>CodeChef</h2>
             </a>
@@ -69,7 +69,7 @@
           </div>
           <div class="resume">
             <h3>CV</h3>
-          <a href="https://drive.google.com/file/d/1Z2lp2fKdglJnR_bFVVKVMApah3L86RoH/view?usp=share_link" ><img src="../assets/cv.png" alt=""  /></a>
+          <a href="https://drive.google.com/file/d/1Z2lp2fKdglJnR_bFVVKVMApah3L86RoH/view?usp=share_link" target="_blank" ><img src="../assets/cv.png" alt=""  /></a>
         </div>
         </div>
         

@@ -14,12 +14,12 @@
         <div class="container">
           <div class="link1">
             <img src="../assets/github.png" alt="" />
-            <a :href="projectData.ProjectsArray[index].Link1"
+            <a :href="projectData.ProjectsArray[index].Link1" target="_blank"
               ><img src="../assets/external-link.png" alt=""
             /></a>
           </div>
           <div class="link2">
-            <a :href="projectData.ProjectsArray[index].Link2"
+            <a :href="projectData.ProjectsArray[index].Link2" target="_blank"
               ><img src="../assets/rocket.gif" alt=""
             /></a>
           </div>

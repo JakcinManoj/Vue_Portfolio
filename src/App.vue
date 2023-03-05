@@ -62,7 +62,6 @@ body {
 }
 footer {
   background-color: #333;
-  color: #fff;
   padding: 2em 0;
   display: grid;
   margin-top: 5%;
@@ -79,12 +78,11 @@ footer ul {
 
 footer li {
   display: inline-block;
-  margin-right: 1em;
 }
 
-footer a {
-  color: #fff;
+footer a, footer p {
   text-decoration: none;
+  color: #fff;
 }
 
 
