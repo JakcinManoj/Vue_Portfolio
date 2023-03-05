@@ -78,41 +78,24 @@
   </div>
 </template>
 <script>
-import { defineComponent, ref, onMounted } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   emits: ["toggleValue"],
   setup(props, ctx) {
     const isTrue = ref(false);
-    const screenWidth = ref(window.innerWidth);
-
     function emitToggleValue() {
       isTrue.value = !isTrue.value;
       console.log("----------test----------");
       ctx.emit("toggleValue", isTrue.value);
+
     }
-
-    onMounted(() => {
-      window.addEventListener("resize", () => {
-        screenWidth.value = window.innerWidth;
-      });
-    });
-
     return {
       isTrue,
       emitToggleValue,
-      screenWidth,
     };
   },
-  watch: {
-    screenWidth(newVal) {
-      if (newVal <= 516) {
-        this.$emit("toggleValue", true);
-      }
-    },
-  },
 });
-
 </script>
 
 

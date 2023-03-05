@@ -65,7 +65,7 @@ footer {
   padding: 2em 0;
   display: grid;
   margin-top: 5%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width:100%;
 }
@@ -84,10 +84,6 @@ footer a, footer p {
   text-decoration: none;
   color: #fff;
 }
-@media screen and (max-width: 1245px) {
-  footer {
-    position: relative;
-  }
-}
+
 
 </style>
