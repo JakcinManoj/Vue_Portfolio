@@ -66,7 +66,7 @@ footer {
   padding: 2em 0;
   display: grid;
   margin-top: 5%;
-  position: static;
+  position: relative;
   bottom: 0;
   width:100%;
 }

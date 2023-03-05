@@ -4,9 +4,9 @@
       <div class="container-one">
         <div class="profile">
           <img src="../assets/profile.png" alt="" />
-          <h3>Jakcin Manoj</h3>
+          <h2>Jakcin Manoj</h2>
           <hr />
-          <p>Software Developer</p>
+          <h2>Software Developer</h2>
         </div>
         <div class="social-links">
           <div class="link">
@@ -175,6 +175,13 @@ img {
   box-shadow: -20px -20px 60px #5b5252,
              20px 20px 60px #7b7070;
 }
+
+.profile{
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 10px;
+}
+
 .profile img {
   height: 10rem;
   border-radius: 50%;
