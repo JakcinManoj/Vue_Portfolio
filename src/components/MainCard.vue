@@ -47,14 +47,23 @@
       <div class="container-two">
         <div class="about-me">
           <h1>About Me</h1>
-          <p>
-            I am a fresher, <br />
+          <p>I'm a candidate,<br>
             Seeking a challenging position in a reputable organization to expand
-            and utilize my learning skills and knowledge. <br />
+            and utilize my learning skills and knowledge.
             Possess excellent communication skills and have an eye for detail.
-            <br />
             Flexible to work in any environment as required.
           </p>
+        </div>
+        <div class="Tools">
+          <h1>Tools</h1>
+          <div class="logos">
+            <img src="../assets/github.png" alt="">
+            <img src="../assets/vscode.png" alt="">
+            <img src="../assets/dbeaver.png" alt="">
+            <img src="../assets/postman.png" alt="">
+            <img src="../assets/docker.png" alt="">
+            <img src="../assets/bitbucket.png" alt="">
+          </div>
         </div>
         <div class="technology-section">
           <h1>Technical Skills</h1>
@@ -66,6 +75,11 @@
             <img src="../assets/python.png" alt="" />
             <img src="../assets/aws.png" alt="" />
             <img src="../assets/graphql.png" alt="" />
+            <img src="../assets/postgres.png" alt="">
+            <img src="../assets/mongodb.png" alt="">
+            <img src="../assets/nestjs.png" alt="">
+            <img src="../assets/java.gif" alt="">
+            
           </div>
           <div class="resume">
             <h3>CV</h3>
@@ -177,6 +191,7 @@ img {
   margin: 1%;
   text-align: center;
   overflow: auto;
+  margin-bottom: 10%;
   box-shadow: -20px -20px 60px #5b5252,
              20px 20px 60px #7b7070;
 }
@@ -223,9 +238,6 @@ img {
   height: 2.5rem;
   padding: 1rem;
 }
-
-
-
 
 
 @media screen and (max-width: 516px) {

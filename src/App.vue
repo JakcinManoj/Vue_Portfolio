@@ -2,21 +2,23 @@
   <MainCard @toggleValue="toggleProjects" />
   <div v-if="showProjects">
     <!-- <ProjectsCard :test="'test'" /> -->
-    <ProjectsCard  />
+    <ProjectsCard />
   </div>
   <footer>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="mailto:manojjakcin@gmail.com?subject=description">Contact</a></li>
-      </ul>
-    </nav>
-    
-    
-    <p>Copyright © 2023 Jakcin Manoj. All rights reserved.</p>
-  </div>
-</footer>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="mailto:manojjakcin@gmail.com?subject=description"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
+      <p>Copyright © 2023 Jakcin Manoj. All rights reserved.</p>
+    </div>
+  </footer>
 </template>
 <script>
 import { ref } from "vue";
@@ -50,7 +52,7 @@ body {
   background-image: url("./assets/background.jpg");
   background-repeat: no-repeat; /* the image will not be repeated */
   background-size: cover; /* the image will cover the entire container */
-  background-position: center;
+  /* background-position: center; */
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -80,7 +82,8 @@ footer li {
   display: inline-block;
 }
 
-footer a, footer p {
+footer a,
+footer p {
   text-decoration: none;
   color: #fff;
 }
