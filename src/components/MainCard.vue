@@ -28,19 +28,35 @@
             </a>
           </div>
           <div class="link">
-            <a href="https://discuss.codechef.com/u/jake_jake_23" target="_blank">
+            <a
+              href="https://discuss.codechef.com/u/jake_jake_23"
+              target="_blank"
+            >
               <img src="../assets/codechef.png" alt="" />
               <h2>CodeChef</h2>
             </a>
           </div>
           <label class="label">
-            <div class="toggle" :class="{ 'blue': isTrue }">
-    <input @click="emitToggleValue" class="toggle-state" type="checkbox" name="check" value="check">
-    <div class="indicator"></div>
-  </div>
+            <div class="toggle" :class="{ blue: isTrue }">
+              <input
+                @click="emitToggleValue"
+                class="toggle-state"
+                type="checkbox"
+                name="check"
+                value="check"
+              />
+              <div class="indicator"></div>
+            </div>
           </label>
           <p></p>
-          <span style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Show Projects</span>
+          <span
+            style="
+              font-weight: bold;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 15px;
+            "
+            >Show Projects</span
+          >
           <p></p>
         </div>
       </div>
@@ -48,7 +64,9 @@
         <div class="about-me">
           <h1>About Me</h1>
           <p>
-            Passionate problem solver eager to contribute to real-world challenges.
+            I am a Problem Solver,<br />
+            Passionate problem solver eager to contribute to real-world
+            challenges.
             Committed to continuous learning and growth.
             Seeking opportunities to innovate and make meaningful contributions.
           </p>
@@ -56,12 +74,12 @@
         <div class="Tools">
           <h1>Tools</h1>
           <div class="logos">
-            <img src="../assets/github.png" alt="">
-            <img src="../assets/vscode.png" alt="">
-            <img src="../assets/dbeaver.png" alt="">
-            <img src="../assets/postman.png" alt="">
-            <img src="../assets/docker.png" alt="">
-            <img src="../assets/bitbucket.png" alt="">
+            <img src="../assets/github.png" alt="" />
+            <img src="../assets/vscode.png" alt="" />
+            <img src="../assets/dbeaver.png" alt="" />
+            <img src="../assets/postman.png" alt="" />
+            <img src="../assets/docker.png" alt="" />
+            <img src="../assets/bitbucket.png" alt="" />
           </div>
         </div>
         <div class="technology-section">
@@ -74,34 +92,35 @@
             <img src="../assets/python.png" alt="" />
             <img src="../assets/aws.png" alt="" />
             <img src="../assets/graphql.png" alt="" />
-            <img src="../assets/postgres.png" alt="">
-            <img src="../assets/mongodb.png" alt="">
-            <img src="../assets/nestjs.png" alt="">
-            <img src="../assets/java.gif" alt="">
-            
+            <img src="../assets/postgres.png" alt="" />
+            <img src="../assets/mongodb.png" alt="" />
+            <img src="../assets/nestjs.png" alt="" />
+            <img src="../assets/java.gif" alt="" />
           </div>
           <div class="resume">
             <h3>CV</h3>
-          <a href="https://drive.google.com/file/d/18UdHCxv47kGegNWD4iorBR03obmTRHL9/view?usp=sharing" target="_blank" ><img src="../assets/cv.png" alt=""  /></a>
+            <a
+              href="https://drive.google.com/file/d/18UdHCxv47kGegNWD4iorBR03obmTRHL9/view?usp=sharing"
+              target="_blank"
+              ><img src="../assets/cv.png" alt=""
+            /></a>
+          </div>
         </div>
-        </div>
-        
       </div>
     </div>
   </div>
 </template>
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  emits: ["toggleValue"],
+  emits: ['toggleValue'],
   setup(props, ctx) {
     const isTrue = ref(false);
     function emitToggleValue() {
       isTrue.value = !isTrue.value;
-      console.log("----------test----------");
-      ctx.emit("toggleValue", isTrue.value);
-
+      console.log('----------test----------');
+      ctx.emit('toggleValue', isTrue.value);
     }
     return {
       isTrue,
@@ -111,16 +130,14 @@ export default defineComponent({
 });
 </script>
 
-
 <style scoped>
-
 .toggle.blue .indicator {
-    background-color: orange;
-  }
+  background-color: orange;
+}
 
 .resume {
   display: grid;
-  
+
   margin-top: 1rem;
   height: 2rem;
   padding: 1rem;
@@ -130,14 +147,12 @@ export default defineComponent({
   height: 2rem;
 }
 
-
 .label {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   color: #394a56;
 }
-
 
 .toggle {
   isolation: isolate;
@@ -146,10 +161,8 @@ export default defineComponent({
   width: 50px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: -8px -4px 8px 0px #ffffff,
-    8px 4px 12px 0px #d1d9e6,
-    4px 4px 4px 0px #d1d9e6 inset,
-    -4px -4px 4px 0px #ffffff inset;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
 }
 
 .toggle-state {
@@ -163,8 +176,7 @@ export default defineComponent({
   border-radius: 15px;
   transform: translate3d(-75%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  box-shadow: -8px -4px 8px 0px #ffffff,
-    8px 4px 12px 0px #d1d9e6;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
 }
 
 .toggle-state:checked ~ .indicator {
@@ -191,11 +203,10 @@ img {
   text-align: center;
   overflow: auto;
   margin-bottom: 10%;
-  box-shadow: -20px -20px 60px #5b5252,
-             20px 20px 60px #7b7070;
+  box-shadow: -20px -20px 60px #5b5252, 20px 20px 60px #7b7070;
 }
 
-.profile{
+.profile {
   text-decoration: none;
   color: #2c3e50;
   font-size: 10px;
@@ -225,7 +236,7 @@ img {
   padding: 2.5%;
   background-color: lavenderblush;
   width: flexbox;
-  
+
   overflow: auto;
   border-radius: 25px;
 }
@@ -237,7 +248,6 @@ img {
   height: 2.5rem;
   padding: 1rem;
 }
-
 
 @media screen and (max-width: 516px) {
   .wrapper {
