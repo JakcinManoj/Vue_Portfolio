@@ -47,11 +47,10 @@
       <div class="container-two">
         <div class="about-me">
           <h1>About Me</h1>
-          <p>I'm a candidate,<br>
-            Seeking a challenging position in a reputable organization to expand
-            and utilize my learning skills and knowledge.
-            Possess excellent communication skills and have an eye for detail.
-            Flexible to work in any environment as required.
+          <p>
+            Passionate problem solver eager to contribute to real-world challenges.
+            Committed to continuous learning and growth.
+            Seeking opportunities to innovate and make meaningful contributions.
           </p>
         </div>
         <div class="Tools">
@@ -83,7 +82,7 @@
           </div>
           <div class="resume">
             <h3>CV</h3>
-          <a href="https://drive.google.com/file/d/1Z2lp2fKdglJnR_bFVVKVMApah3L86RoH/view?usp=share_link" target="_blank" ><img src="../assets/cv.png" alt=""  /></a>
+          <a href="https://drive.google.com/file/d/18UdHCxv47kGegNWD4iorBR03obmTRHL9/view?usp=sharing" target="_blank" ><img src="../assets/cv.png" alt=""  /></a>
         </div>
         </div>
         
