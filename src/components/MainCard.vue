@@ -100,7 +100,7 @@
           <div class="resume">
             <h3>CV</h3>
             <a
-              href="https://drive.google.com/file/d/1BjMWgd1YKs2_VfyLN9LVxoVKkl_5tgqC/view?usp=sharing"
+              href="https://drive.google.com/file/d/1mQETGtldCxZGlVvItdUnt6uivQSbWBIx/view?usp=sharing"
               target="_blank"
               ><img src="../assets/cv.png" alt=""
             /></a>
